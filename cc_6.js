@@ -19,3 +19,17 @@ class Manager extends Employee {
         return `${this.name}manager from ${this.department} department manages a team of ${this.teamSize} people.`; 
     }   
 }
+
+//Company Class 
+class Company {
+    constructor(name) {
+        this.Employees = [];
+
+    }
+
+    // Add Employee to Company
+    addEmployee(employee) {
+            this.Employees.push(employee);
+    }
+
+    //

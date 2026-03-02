@@ -40,3 +40,22 @@ class Company {
         });
     }
 }
+
+//Testing the implementation
+//Employees and Managers
+const emp1 = new Employee("Alice", "Operations");
+const emp2 = new Employee("Bob", "Marketing");
+const manager1 = new Manager("Charlie", "Operations", 5);
+const manager2 = new Manager("Diana", "Marketing", 3);
+
+//Company Instance
+const myCompany = new Company("Casco Inc.");
+
+// Employees and Managers added to the Company
+myCompany.addEmployee(emp1);
+myCompany.addEmployee(emp2);
+myCompany.addEmployee(manager1);
+myCompany.addEmployee(manager2);
+
+// List all Employees in the Company
+myCompany.listEmployees();

@@ -32,4 +32,11 @@ class Company {
             this.Employees.push(employee);
     }
 
-    //
+    //List all Employees in the Company
+    listEmployees() {
+        console.log(`Employees in ${this.name} Company:`);
+        this.Employees.forEach(employee => {
+            console.log(employee.describe());
+        });
+    }
+}

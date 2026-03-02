@@ -48,8 +48,14 @@ const emp2 = new Employee("Bob", "Marketing");
 const manager1 = new Manager("Charlie", "Operations", 5);
 const manager2 = new Manager("Diana", "Marketing", 3);
 
+// Describe Employees and Managers
+console.log(emp1.describe());
+console.log(emp2.describe());
+console.log(manager1.describe());
+console.log(manager2.describe());
+
 //Company Instance
-const myCompany = new Company("Casco Inc.");
+const myCompany = new Company();
 
 // Employees and Managers added to the Company
 myCompany.addEmployee(emp1);
